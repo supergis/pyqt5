@@ -1,0 +1,12 @@
+TARGET = pylupdate5
+TEMPLATE = app
+QT -= gui
+QT += xml
+CONFIG += warn_on release
+CONFIG -= android_install
+target.path = /usr/bin
+INSTALLS += target
+INCLUDEPATH += /home/supermap/OpenThings/pyqt5/pylupdate
+VPATH = /home/supermap/OpenThings/pyqt5/pylupdate
+HEADERS = proparser.h simtexth.h metatranslator.h translator.h
+SOURCES = metatranslator.cpp translator.cpp fetchtr.cpp merge.cpp simtexth.cpp main.cpp numberh.cpp sametexth.cpp proparser.cpp

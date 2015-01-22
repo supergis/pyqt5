@@ -1,0 +1,12 @@
+TARGET = pyrcc5
+TEMPLATE = app
+QT -= gui
+QT += xml
+CONFIG += warn_on release
+CONFIG -= android_install
+target.path = /usr/bin
+INSTALLS += target
+INCLUDEPATH += /home/supermap/OpenThings/pyqt5/pyrcc
+VPATH = /home/supermap/OpenThings/pyqt5/pyrcc
+HEADERS = rcc.h
+SOURCES = rcc.cpp main.cpp
